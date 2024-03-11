@@ -12,15 +12,9 @@
         }
         header {
             background-color: blue;
-        }
-        .header {
-            font-size: 30px;
             color: yellow;
             padding: 15px;
-        }
-        span {
-            font-size: 15px;
-            color: white;
+            text-align: center; /* Tambahkan properti text-align:center; untuk membuat teks di tengah */
         }
         nav {
             float: left;
@@ -32,8 +26,8 @@
             margin-bottom: 10px;
         }
         ul {
-            padding-left: 9px;
-            padding-top: 0px;
+            list-style-type: none; /* Menghilangkan bullet points pada list */
+            padding-left: 0; /* Menghilangkan padding kiri pada list */
         }
         a {
             color: black;
@@ -44,33 +38,31 @@
             text-decoration: underline;
         }
         img {
+            text-align : center;
             width: 90px;
-            height: auto;
+            height: auto
         }
         section {
-            display: table;
+            display: flex; /* Mengubah tata letak menjadi flexbox */
         }
         article {
-            float: left;
-            width: 70%;
-            height: 300px;
+            flex: 1; /* Menggunakan flex untuk membuat article memenuhi ruang tersedia */
             text-align: center;
             padding: 20px;
         }
-        .ti {
-            line-height: 0px;
-        }
         .Kampus {
+            text-align :center;
             color: black;
-            font-size: 20px;
+            font-size: 20px
         }
         p {
             color: red;
         }
         footer {
-            padding: 1px;
+            padding: 10px;
             text-align: right;
             background-color: lightblue;
+            clear: both; /* Membersihkan kedua sisi agar tidak float */
         }
         p.footer {
             color: rgb(32, 32, 32);
@@ -86,7 +78,7 @@
 
     <section>
         <nav>
-            <ul type="none">
+            <ul>
                 <li><a href="margin.html">Menu 1</a></li>
                 <li><a href="header.html">Menu 2</a></li>
                 <li><a href="simple.html">Menu 3</a></li>
