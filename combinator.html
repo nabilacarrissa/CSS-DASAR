@@ -1,32 +1,31 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Combinator Selector</title>
-  <style>
-    div p { /* no 1 */
-      color: red;
-    }
-    div > p { /* no 2 */
-      background-color: yellow;
-    }
-    div + p { /* no 3 */
-      background-color: darkgray;
-    }
-    div p { /* no 4 */
-      color: cyan;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No 1 B</title>
+
+    <style>
+        div p { /* no 1 */
+            color: red;
+        }
+        div > p { /* no 2 */
+            background-color: yellow;
+        }
+        div + p { /* no 3 */
+            background-color: darkgrey;
+        }
+        div ~ p { /* no 4 */
+            color: cyan;
+        }
+    </style>
 </head>
 <body>
-  <h1>Combinator Selector</h1>
-  <p>Contoh penggunaan combinator selector pada elemen HTML.</p>
-  <div>
-    <p>Paragraf ini berwarna merah.</p>
-    <p>Paragraf ini berwarna kuning dan merupakan anak langsung dari div.</p>
-    <p>Paragraf ini berwarna abu-abu tua dan merupakan saudara kandung langsung dari div.</p>
-    <p>Paragraf ini berwarna cyan.</p>
-  </div>
+    <div>
+        <p>Berikut adalah aturan untuk membuat teks berwana merah</p>
+        <p>menggunakan selector untuk memilih elemen p.</p>
+    </div>
+    <p>Membuat elemen p di dalam div menjadi memiliki background color berwarna abu .</p> 
+    <p>Membuat elemen p diluar div menjadi berwarna cyan</p>
 </body>
 </html>
